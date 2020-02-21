@@ -207,5 +207,7 @@ def Over9000(params, alpha=0.5, k=6, *args, **kwargs):
      ralamb = Ralamb(params, *args, **kwargs)
      return Lookahead(ralamb, alpha, k)
 
+RangerLars = Over9000
+
 # How to use
 # optimizer = Over9000(model.parameters(), lr=2e-3, weight_decay=1e-3)
